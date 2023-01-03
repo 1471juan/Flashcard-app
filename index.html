@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Cards</title>
+</head>
+
+<body>
+    <div class="contact_container">
+        <p>app by juan manuel <br>
+            email: jmanuel.pgp@gmail.com</p>
+    </div>
+
+
+
+    <div class="app_card">
+        <!-- card reviewing -->
+        <div id="card_container" class="card_container">
+            <div class="card_header">
+                <h2 id="cards_remaining" class="cards_remaining"></h2>
+                <h2 id="deck_name" class="deck_name"></h2>
+            </div>
+
+
+            <h4 id="card_front"></h4>
+            <h4 id="card_back"></h4>
+
+            <button class="button_show custom-button" id="button_show">show</button>
+
+            <button class="button_next custom-button" id="button_next">show another one</button>
+            <button class="button_fail custom-button" id="button_fail">Again</button>
+            <button class="button_success custom-button" id="button_success">Good</button>
+            <button class="button_finish custom-button" id="button_finish">Come back</button>
+
+        </div>
+        <!-- deck list -->
+        <div id="deck_container" class="deck_container">
+            <h2 class="deck_container_title">Select a deck</h2>
+            <ul id="deck_list" class="deck_list">
+            </ul>
+
+        </div>
+
+        <!-- add deck -->
+        <div id="app_deck_add" class="app_deck_add">
+
+            <h2>Add deck</h2>
+            <form>
+                <h5 class="label_app_deck_add_name">name:</h5>
+                <input class="input_app_deck_add_name" type="text" id="input_app_deck_add_name"
+                    name="input_app_deck_add_name"><br><br>
+            </form>
+            <button id="submit_add_deck" class="custom-button">Submit</button>
+        </div>
+
+        <!-- add card -->
+        <div id="deck_add_card" class="deck_add_card">
+
+            <h2> Add card</h2>
+
+            <form>
+                <h5 class="label_input_add_card">Front:</h5>
+                <input class="input_add_card" type="text" id="deck_add_card_front" name="deck_add_card_front"><br><br>
+                <h5 class="label_input_add_card">Back:</h5>
+                <input class="input_add_card" type="text" id="deck_add_card_back" name="deck_add_card_back"><br><br>
+            </form>
+            <button id="submit_add_card" class="custom-button">Submit</button>
+        </div>
+
+        <!-- customize -->
+        <div id="customize_container" class="customize_container">
+            <h2>customize the UI</h2>
+            <select name="color_palette" id="option_customize_container" class="option_palette">
+                <option value="default">Default</option>
+                <option value="pastel">Pastel</option>
+                <option value="splash">Splash</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button id="customize_apply" class="customize_apply custom-button">Apply</button>
+        </div>
+    </div>
+
+
+    <!-- Options -->
+    <div id="options_container" class="options_container">
+
+        <button id="button_return" class="option_item custom-button">Return</button>
+
+        <select name="membership" id="option_review_mode" class="option_item">
+            <option value="default">Default</option>
+            <option value="ordered">Ordered</option>
+            <option value="random">Random</option>
+        </select>
+
+        <button id="button_add_deck" class="option_item custom-button">Add</button>
+
+        <button id="button_customize" class="option_item custom-button">Customize</button>
+
+    </div>
+
+</body>
+
+<script type="text/javascript" src="./assets/app.js"></script>
+
+</html>

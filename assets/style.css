@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("./fonts/TT\ Norms\ Pro\ Light.otf") format("woff2");
+}
+
+:root {
+  --color-main-bg: #3d5b59;
+  --color-main-txt: #fcb5ac;
+  --color-main-special: #b5e5cf;
+  --font-main: "TT Norms Pro", sans-serif;
+}
+
+body {
+  background-color: var(--color-main-bg);
+  color: var(--color-main-txt);
+  font-family: var(--font-main);
+}
+
+/* Card */
+.card_header {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+.cards_remaining {
+  font-size: 10px;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.deck_name {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.app_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border: 1px solid var(--color-main-txt);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card_container {
+  flex-direction: column;
+  display: none;
+}
+
+/* Decks */
+
+.deck_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.deck_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: color 0.5s ease-out;
+  border: none !important;
+}
+
+a > h3 {
+  display: inline;
+  float: left;
+}
+
+a > h3:hover {
+  color: var(--color-main-special);
+}
+
+.deck_container_title {
+  border-bottom: 1px solid var(--color-main-txt);
+  padding-bottom: 10px;
+}
+
+.deck_link_more {
+  display: inline;
+  float: right;
+  margin-left: 15px;
+  margin-top: 7px;
+  align-items: center;
+  text-align: center;
+}
+.deck_link_more_text {
+  font-size: 15px;
+  color: var(--color-main-special);
+}
+
+/* Add deck */
+.app_deck_add {
+  display: flex;
+  flex-direction: column;
+}
+/* Add card */
+.deck_add_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_input_add_card {
+  margin: 0;
+  text-align: left;
+}
+/* Customize the UI */
+.customize_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Options */
+.options_container {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  border: 1px solid var(--color-main-txt);
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.contact_container {
+  font-size: 10px;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+  position: absolute;
+}
+/* Buttons */
+.custom-button {
+  align-items: center;
+  background-color: var(--color-main-bg);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: var(--color-main-txt);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 25px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  text-align: center;
+  width: auto;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.custom-button:hover {
+  transform: translateY(-1px);
+}
+
+.custom-button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.button_next {
+  display: none;
+}
+
+.button_fail {
+  display: none;
+}
+
+.button_success {
+  display: none;
+}
+
+.button_finish {
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.option_item {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 0px;
+  margin-left: 20px;
+  width: 100px;
+  height: 25px;
+}
+
+.customize_apply {
+  margin-top: 5px;
+}
+
+/* select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+  background: #fff;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 28px !important;
+}
